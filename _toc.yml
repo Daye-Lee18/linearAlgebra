@@ -3,7 +3,20 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+
+parts:
+  - caption: 기초 
+    chapters:
+    - file: _pages/basics/1_numpy
+  - caption: 이론
+    chapters:
+    - file: _pages/theory/1_Introduction
+      sections:
+      - file: _pages/theory/1.1matrix
+      - file: _pages/practice/1_vector_operation
+    - file: _pages/theory/3_matrix
+    - file: notebooks
+
+  - caption: 실습
+    chapters:
+    - file: markdown-notebooks
